@@ -1,0 +1,63 @@
+{
+  "name": "rcrsv-blog",
+  "description": "rcrsv blog",
+  "version": "1.0.0",
+  "author": "Christopher Dunavan",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop -o",
+    "gds": "google-drive-source",
+    "gds:debug": "DEBUG=gDS google-drive-source"
+  },
+  "browserslist": [
+    "> 1%",
+    "IE >= 9",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "gatsby": "^1.9.231",
+    "gatsby-image": "^1.0.51",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-catch-links": "^1.0.19",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-lodash": "^1.0.11",
+    "gatsby-plugin-manifest": "^1.0.15",
+    "gatsby-plugin-offline": "^1.0.15",
+    "gatsby-plugin-react-helmet": "^2.0.7",
+    "gatsby-plugin-sharp": "^1.6.44",
+    "gatsby-plugin-sitemap": "^1.2.16",
+    "gatsby-plugin-styled-components": "^2.0.9",
+    "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-remark-autolink-headers": "^1.4.13",
+    "gatsby-remark-copy-linked-files": "^1.5.32",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-images": "^1.5.63",
+    "gatsby-remark-prismjs": "^1.2.17",
+    "gatsby-remark-responsive-iframe": "^1.4.18",
+    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-transformer-remark": "^1.7.36",
+    "gatsby-transformer-sharp": "^1.6.24",
+    "polished": "^1.9.2",
+    "prop-types": "^15.6.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "google-drive-source": "^1.0.9",
+    "prettier": "^1.11.1"
+  }
+}
