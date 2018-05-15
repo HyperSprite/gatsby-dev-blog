@@ -13,7 +13,7 @@ const Content = styled.div`
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 2rem 4rem;
-  
+
 
   @media ${media.tablet} {
     padding: 3rem 2rem;
@@ -27,7 +27,6 @@ const Content = styled.div`
 const IndexPage = props => {
   const postEdges = props.data.allMarkdownRemark.edges;
   const heroImage = postEdges[postEdges.length - 1].node.frontmatter.cover;
-  console.dir(heroImage);
   return (
     <div>
       <WindowSizeRP

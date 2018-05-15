@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-class Ratio extends React.Component {
-  constructor() {
-    super(...arguments);
+class WindowSizeRP extends React.Component {
+  constructor(props) {
+    super(props);
     this.handleResize = this.handleResize.bind(this);
     this.state = {
       hasComputed: false,
@@ -25,9 +24,6 @@ class Ratio extends React.Component {
     window.removeEventListener('resize', this.handleResize, false);
   }
   getDimensions() {
-    // const { width, height } = this.container.getBoundingClientRect();
-    // console.log(width, height, window.innerHeight);
-    console.log(window.innerWidth, window.innerHeight);
     return {
       width: window.innerWidth,
       height: window.innerHeight,
@@ -52,4 +48,4 @@ class Ratio extends React.Component {
   }
 }
 
-export default Ratio;
+export default WindowSizeRP;
