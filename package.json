@@ -1,7 +1,7 @@
 {
   "name": "rcrsv-blog",
   "description": "rcrsv blog",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "author": "Christopher Dunavan",
   "keywords": [
     "gatsby"
@@ -25,6 +25,7 @@
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-catch-links": "^1.0.19",
     "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-lodash": "^1.0.11",
     "gatsby-plugin-manifest": "^1.0.15",
     "gatsby-plugin-offline": "^1.0.15",

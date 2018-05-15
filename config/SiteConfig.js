@@ -9,12 +9,13 @@ module.exports = {
   siteBanner: '/images/default-cover.jpg',
   siteDescription: 'Tech blog',
   siteOwner: 'Christopher Dunavan',
+  siteGoogleAnalytics: 'UA-84713563-3',
 
   // social
   siteOwnerHome: 'https://www.rcrsv.com/',
-  siteFBAppID: '123456789', // Facebook App ID
-  userTwitter: 'minimal', // Twitter Username
-  ogSiteName: 'minimal', // Facebook Site Name
+  // siteFBAppID: '123456789', // Facebook App ID
+  // userTwitter: 'minimal', // Twitter Username
+  // ogSiteName: 'minimal', // Facebook Site Name
 
   // Manifest and Progress color
   themeColor: '#78909c',
