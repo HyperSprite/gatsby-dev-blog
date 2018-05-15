@@ -7,7 +7,7 @@ category: "tech"
 ---
 
 
-I recently gave a talk at SouthBayReact regarding publishing React components to NPM. While React components was the focus these techniques can work for all kinds of packages.
+I recently gave a talk at SouthBayReact regarding publishing React components to NPM. While React components were the focus, these techniques can work for all kinds of packages.
 
 
 --- 
@@ -38,7 +38,7 @@ This talk presented by Christopher Dunavan, who started out, like a lot of us, s
 
 
 * [npm-workspace](https://www.npmjs.com/package/npm-workspace) - If you need more control over your `npm link` you might like workspaces
-* [npm dependencies](https://docs.npmjs.com/files/package.json#dependencies) - Fine grained dependencies explanation.
+* [npm dependencies](https://docs.npmjs.com/files/package.json#dependencies) - Fine-grained dependencies explanation
 * [npm audit](https://blog.npmjs.org/post/173719309445/npm-audit-identify-and-fix-insecure)
 * [npm publish](https://docs.npmjs.com/getting-started/publishing-npm-packages) - Video how-to on publishing for the first time
 * [npm version](https://docs.npmjs.com/cli/version) - Allows for easier versioning of packages
@@ -50,10 +50,10 @@ This talk presented by Christopher Dunavan, who started out, like a lot of us, s
 
 * [Jest](https://facebook.github.io/jest/) - JavaScript Testing
 * [Enzyme](http://airbnb.io/enzyme/) - Testing utility for React
-* [Husky](https://www.npmjs.com/package/husky) - pre commit and other hooks to help automate your workflow
+* [Husky](https://www.npmjs.com/package/husky) - pre-commit and other hooks to help automate your workflow
 * [eslint](https://www.npmjs.com/package/eslint) - Modern JavaScript linting
 * [React Styleguidist](https://react-styleguidist.js.org/) - Styleguide
-* [Cypress](https://www.cypress.io/) - End to end testing
+* [Cypress](https://www.cypress.io/) - End-to-end testing
 * [Codesandbox.io](https://codesandbox.io/s/xp91vq473w) - For when words don't do it justice, make an example
 
 
@@ -63,7 +63,7 @@ This talk presented by Christopher Dunavan, who started out, like a lot of us, s
 * [My Basic Stateless Starter - github](https://github.com/HyperSprite/basic-stateless-starter) - A basic stateless starter setup with readme template and unit testing
 
 
-Things found during research but have not used yet
+Things found during research, but have not used yet
 
 
 * [Gatsby docgen](https://www.gatsbyjs.org/packages/gatsby-transformer-react-docgen/?=docgen)

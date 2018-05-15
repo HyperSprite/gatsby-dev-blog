@@ -7,7 +7,7 @@ category: "tech"
 ---
 
 
-NPM version is a module publishing helper. It has three phases that let you do things before, during and after publishing your. 
+NPM version is a module publishing helper. It has three phases that let you do things before, during, and after publishing your. 
 
 
 All you need to do is decide what you want it to do and add it to the predefined script names. 
@@ -33,8 +33,8 @@ Before we run it, we need to decide what semantic versioning we need. NPM has an
 
 
 Here are the rules of thumb
-Major: Something that was working is going to break. The major change tells people and automated systems, to look a little closer at this before you upgrade and make sure you understand the implications.
-Minor: New features are probably added but nothing should break, but if something does, you know where to look first.
+Major: Something that was working is going to break. The major change tells people and automated systems to look a little closer at this before you upgrade and make sure you understand the implications.
+Minor: New features are probably added, but nothing should break. If something does, you know where to look first.
 Patch: Mainly fixes, this should not cause any issues with automated updates.
 
 
