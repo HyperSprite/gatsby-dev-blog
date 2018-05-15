@@ -19,6 +19,7 @@ module.exports = {
   // Manifest and Progress color
   themeColor: '#78909c',
   backgroundColor: '#fefefe',
+  // backgroundColor: '#fefefe',
 
   // Settings for typography.js
   headerFontFamily: 'Bitter',
@@ -27,4 +28,5 @@ module.exports = {
 
   // contact Form text
   contactFormTxt: `Use the form below if you'd like to get in touch`,
+  contactThanks: `Success! Thank you for your intrest`,
 };

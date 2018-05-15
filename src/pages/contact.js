@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
+import Link, { navigateTo } from 'gatsby-link';
 import styled from 'styled-components';
 import Wrapper from '../components/Wrapper';
 import Header from '../components/Header';
@@ -43,34 +43,75 @@ const Content = styled.div`
   }
 `;
 
-const Contact = () => (
-  <Wrapper>
-    <Helmet title={`Contact | ${config.siteTitle}`} />
-    <Header>
-      <Link to="/">{config.siteTitle}</Link>
-    </Header>
-    <Content>
-      <h1>Contact</h1>
-      <p>{config.contactFormTxt}</p>
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <p>
-          <label htmlFor="name">Name</label>
-          <input name="name" type="text" required />
-        </p>
-        <p>
-          <label htmlFor="email">E-Mail</label>
-          <input name="email" type="email" required />
-        </p>
-        <p>
-          <label htmlFor="message">Your Message</label>
-          <textarea name="message" required />
-        </p>
-        <p>
-          <Button type="submit">Send</Button>
-        </p>
-      </form>
-    </Content>
-  </Wrapper>
-);
+const encode = data =>
+  Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  }
+
+  handleSubmit(e) {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    })
+      .then(() => navigateTo('/thanks/'))
+      .catch(error => alert(error));
+    e.preventDefault();
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <Helmet title={`Contact | ${config.siteTitle}`} />
+        <Header>
+          <Link to="/">{config.siteTitle}</Link>
+        </Header>
+        <Content>
+          <h1>Contact</h1>
+          <p>{config.contactFormTxt}</p>
+          <form
+            name="contact"
+            method="post"
+            action="/thanks/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+          >
+            <input type="hidden" name="bot-field" onChange={this.handleChange} />
+            <p>
+              <label htmlFor="name">Name</label>
+              <input name="name" type="text" onChange={this.handleChange} required />
+            </p>
+            <p>
+              <label htmlFor="email">E-Mail</label>
+              <input name="email" type="email" onChange={this.handleChange} required />
+            </p>
+            <p>
+              <label htmlFor="message">Your Message</label>
+              <textarea name="message" onChange={this.handleChange} required />
+            </p>
+            <p>
+              <Button type="submit">Send</Button>
+            </p>
+          </form>
+        </Content>
+      </Wrapper>
+    );
+  }
+}
 
 export default Contact;

@@ -13,8 +13,7 @@ const Content = styled.div`
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 2rem 4rem;
-
-
+  margin-top: 1em;
   @media ${media.tablet} {
     padding: 3rem 2rem;
   }
