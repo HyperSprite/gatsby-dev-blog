@@ -24,4 +24,7 @@ module.exports = {
   headerFontFamily: 'Bitter',
   bodyFontFamily: 'Open Sans',
   baseFontSize: '18px',
+
+  // contact Form text
+  contactFormTxt: `Use the form below if you'd like to get in touch`,
 };

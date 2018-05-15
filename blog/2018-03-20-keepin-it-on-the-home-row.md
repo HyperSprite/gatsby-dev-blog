@@ -13,7 +13,7 @@ category: "hobbies"
 I spent more than half my life searching for the arrow keys and pressing the wrong button when I needed some extraneous key like `delete` and `esc` because they are different on almost every keyboard. The final straws were two keyboards from Microsoft: the Microsoft Sidewinder X4 and the Microsoft Sculpt Ergonomic. Both had the ESC key off in Siberia compared to my laptop and apparently I use the ESC key all the time.
 
 
-Then I discovered keyboard layers via frgomes [Carpalx](https://github.com/frgomes/carpalx) which let me program my linux laptop to use the worthless CAPS LOCK as a function key and remap just about everything outside of the main alphas and base modifiers. So holding CAPS LOCK + ` is ESC, the F row moved down to the num row. Arrows are on both WASD and IJKL and Backspace and Delete are R and L. Home and End are right there at T and G. You get the picture. Honestly, I never even used Home and End before because their placement was so unreliable, but now I use them all the time.
+Then I discovered keyboard layers via *frgomes* [Carpalx](https://github.com/frgomes/carpalx) which let me program my Linux laptop to use the worthless CAPS LOCK as a function key and remap just about everything outside of the main alphas and base modifiers. So holding CAPS LOCK + ` is ESC. The F row moved down to the num row. Arrows are on both WASD and IJKL and Backspace and Delete are R and L. Home and End are right there at T and G. You get the picture. Honestly, I never even used Home and End before because their placement was so unreliable, but now I use them all the time.
 
 
 ![Poker Layout](./images/poker-layout.png)

@@ -16,7 +16,7 @@ I recently gave a talk at SouthBayReact regarding publishing React components to
 ## Overview
 
 
-Beyond publishing "Hello World". How to setup, develop, test, and publish your React components to npm for your own selfish reasons.
+Beyond publishing "Hello World". How to setup, develop, test, and publish your React components to NPM for your own selfish reasons.
 
 
 This talk presented by Christopher Dunavan, who started out, like a lot of us, sharing some custom functions and components between different projects by manually copying a file or two from one project to another. Then one day he wondered why wasn't he using NPM to manage this for him and what else he could leverage to make his code better and his life easier. 
@@ -37,12 +37,12 @@ This talk presented by Christopher Dunavan, who started out, like a lot of us, s
 ### NPM Resources
 
 
-* [npm-workspace](https://www.npmjs.com/package/npm-workspace) - If you need more control over your `npm link` you might like workspaces
+* [npm-workspace](https://www.npmjs.com/package/npm-workspace) - If you need more control over your **npm link** you might like workspaces
 * [npm dependencies](https://docs.npmjs.com/files/package.json#dependencies) - Fine-grained dependencies explanation
-* [npm audit](https://blog.npmjs.org/post/173719309445/npm-audit-identify-and-fix-insecure)
+* [npm audit](https://blog.npmjs.org/post/173719309445/npm-audit-identify-and-fix-insecure) - NPM package audit for your projects
 * [npm publish](https://docs.npmjs.com/getting-started/publishing-npm-packages) - Video how-to on publishing for the first time
 * [npm version](https://docs.npmjs.com/cli/version) - Allows for easier versioning of packages
-* [npm outdated](https://docs.npmjs.com/cli/outdated) - Checks npm packages for versions 
+* [npm outdated](https://docs.npmjs.com/cli/outdated) - Checks NPM packages for versions 
 
 
 ### Other Resources 
@@ -50,9 +50,9 @@ This talk presented by Christopher Dunavan, who started out, like a lot of us, s
 
 * [Jest](https://facebook.github.io/jest/) - JavaScript Testing
 * [Enzyme](http://airbnb.io/enzyme/) - Testing utility for React
-* [Husky](https://www.npmjs.com/package/husky) - pre-commit and other hooks to help automate your workflow
+* [Husky](https://www.npmjs.com/package/husky) - Pre-commit and other hooks to help automate your workflow
 * [eslint](https://www.npmjs.com/package/eslint) - Modern JavaScript linting
-* [React Styleguidist](https://react-styleguidist.js.org/) - Styleguide
+* [React Styleguidist](https://react-styleguidist.js.org/) - Styleguide for React
 * [Cypress](https://www.cypress.io/) - End-to-end testing
 * [Codesandbox.io](https://codesandbox.io/s/xp91vq473w) - For when words don't do it justice, make an example
 
@@ -63,10 +63,10 @@ This talk presented by Christopher Dunavan, who started out, like a lot of us, s
 * [My Basic Stateless Starter - github](https://github.com/HyperSprite/basic-stateless-starter) - A basic stateless starter setup with readme template and unit testing
 
 
-Things found during research, but have not used yet
+Things found during research, but not used yet...
 
 
-* [Gatsby docgen](https://www.gatsbyjs.org/packages/gatsby-transformer-react-docgen/?=docgen)
+* [Gatsby docgen](https://www.gatsbyjs.org/packages/gatsby-transformer-react-docgen/?=docgen) - React component to docgen transformer 
 * [renovate](https://www.npmjs.com/package/renovate) - Dependency checking
 * [updtr](https://www.npmjs.com/package/updtr) - Uses npm outdated to update packages like a robot
 * [webpack: output library target](https://webpack.js.org/configuration/output/#output-librarytarget)
