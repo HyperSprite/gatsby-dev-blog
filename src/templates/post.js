@@ -36,11 +36,15 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `;
 
+const FooterNav = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const Post = props => {
-  const { slug } = props.pathContext;
+  const { slug, prev, next } = props.pathContext;
   const postNode = props.data.markdownRemark;
   const post = postNode.frontmatter;
-
   return (
     <Wrapper>
       <SEO postPath={slug} postNode={postNode} postSEO />
@@ -57,6 +61,10 @@ const Post = props => {
           <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
         </Subline>
         <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        <FooterNav>
+          {prev ? <Link to={prev.fields.slug}>{` < ${prev.frontmatter.title} `}</Link> : <div />}
+          {next ? <Link to={next.fields.slug}>{` ${next.frontmatter.title} > `}</Link> : <div />}
+        </FooterNav>
       </Content>
     </Wrapper>
   );
