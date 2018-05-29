@@ -57,7 +57,7 @@ const Post = props => {
         {post.cover && <Img sizes={post.cover.childImageSharp.sizes} style={{ zIndex: 99 }} />}
         <Title>{post.title}</Title>
         <Subline>
-          {post.date} &mdash; {postNode.timeToRead} Min Read &mdash; In{' '}
+          {post.date} : {postNode.timeToRead} Min Read : In&nbsp;
           <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
         </Subline>
         <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />

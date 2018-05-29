@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 import kebabCase from 'lodash/kebabCase';
 
+import { media } from '../utils/media';
 import Subline from './Subline';
 
 const Post = styled.article`
@@ -12,10 +13,16 @@ const Post = styled.article`
   margin-bottom: 3.5rem;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   position: relative;
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   margin-bottom: 0.75rem;
+  @media ${media.phone} {
+    font-size: 2rem;
+  }
+  @media ${media.tablet} {
+    font-size: 2.5rem;
+  }
 `;
 
 const Initiale = styled.span`
@@ -43,8 +50,7 @@ const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
         <Link to={slug}>{title}</Link>
       </Title>
       <Subline>
-        {date} &mdash; {timeToRead} Min Read &mdash; In{' '}
-        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
+        {date} : {timeToRead} Min Read : In&nbsp;<Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
       </Subline>
       <Excerpt>{excerpt}</Excerpt>
     </Post>

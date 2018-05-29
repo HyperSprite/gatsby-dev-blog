@@ -25,7 +25,7 @@ module.exports = {
   // Settings for typography.js
   headerFontFamily: 'Bitter',
   bodyFontFamily: 'Open Sans',
-  baseFontSize: '18px',
+  baseFontSize: '16px',
 
   // contact Form text
   contactFormTxt: `Use the form below if you'd like to get in touch`,

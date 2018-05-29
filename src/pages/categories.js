@@ -44,7 +44,7 @@ const Category = props => {
       <Content>
         <SectionTitle>Categories</SectionTitle>
         {group.map(category => (
-          <Title>
+          <Title key={kebabCase(category.fieldValue)}>
             <Link to={`/categories/${kebabCase(category.fieldValue)}`}>{category.fieldValue}</Link> ({
               category.totalCount
             })

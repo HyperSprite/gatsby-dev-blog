@@ -11,8 +11,6 @@ const Wrapper = styled.header`
     ${props => lighten(0.1, props.theme.primary)}
   );
   grid-column: 1 / -1;
-  margin-left: -1rem;
-  margin-right: -1rem;
   padding: 0.5rem 0.5rem 5rem 0.5rem;
   box-shadow: inset 0px -10px 30px 0px rgba(0, 0, 0, 0.1);
 `;

@@ -7,6 +7,9 @@ const Line = styled.div`
   ${props => props.sectionTitle && 'margin-top: -3rem'};
   ${props => props.sectionTitle && 'margin-bottom: 4rem'};
   ${props => props.sectionTitle && 'text-align: center'};
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 `;
 
 const Subline = props => <Line sectionTitle={props.sectionTitle}>{props.children}</Line>;
