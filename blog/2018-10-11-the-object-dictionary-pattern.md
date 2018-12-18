@@ -1,7 +1,7 @@
 ﻿---
 author: "hypersprite"
 title: "the object dictionary pattern"
-date: "2018-11-11"
+date: "2018-10-11"
 cover: "./images/hs-mg-7219.jpg"
 category: "tech"
 ---
